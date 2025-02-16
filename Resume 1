@@ -1,0 +1,185 @@
+\documentclass[letterpaper,10pt]{article}  % Changed font size to 10pt
+
+%===============================%
+%         Packages              %
+%===============================%
+
+% Dependencies
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}  % For adding icons and images
+\usepackage{tcolorbox} % For boxed elements
+
+%===============================%
+%         Colors                %
+%===============================%
+
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{32CD32}  % LimeGreen
+\definecolor{accentText}{HTML}{8B0000}   % DarkRed
+\definecolor{accentLine}{HTML}{DE3163}   % CherryRed
+\definecolor{sectionBg}{HTML}{E0FFFF}    % LightAquamarine
+
+%===============================%
+%         Page Style            %
+%===============================%
+
+\usepackage[top=0.5in, bottom=1in, left=1in, right=1in]{geometry}  % Adjusted top margin
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+%===============================%
+%       Custom Commands         %
+%===============================%
+
+% Title Formatting
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\Huge\color{accentTitle} \textbf{#1}}  % Name in Large Font
+    \vspace{8pt}  
+    \hrule height 1.5pt width \textwidth\color{accentLine}  % Divider
+    \vspace{3pt}
+    {\footnotesize #2}  % Subtitle (Contact Info)
+    \vspace{1pt}
+    \hrule height 1.5pt width \textwidth\color{accentLine}
+  \end{center}
+}
+
+% Section Headers with Icons
+\newcommand{\sectionTitle}[2]{
+  \vspace{5pt}
+  \noindent\colorbox{sectionBg}{\parbox{\dimexpr\textwidth-2\fboxsep}{
+    {\Large \fa#1 \hspace{8pt} \textbf{#2}}
+  }}
+  \vspace{-5pt}  % Reduced spacing after the section header
+}
+
+% Resume List
+\newenvironment{resume_list}{
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=15pt, label=\faAngleRight, itemsep=1pt]
+}{
+  \end{itemize}
+}
+
+%===============================%
+%         Document              %
+%===============================%
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+
+\documentTitle{xxxxx}{
+    \href{tel:+xxxxxxxxxx}{\faPhone \texttt{xxxxxxxxxx}} ~ | ~
+    \href{mailto:xxxxx@xxxx.com}{\faEnvelope\ xxxxx@xxxx.com} ~ | ~
+    \href{https://www.linkedin.com/in/xxxxx}{\faLinkedin \ www.linkedin.com/in/xxxxx} \\
+    \href{https://github.com/xxxxx}{\faGithub\ xxxxx (xxxxx)}
+}
+
+%--------------------%
+% Career Prospective %
+%--------------------%
+\sectionTitle{Bullseye}{Career Prospective}
+\vspace{-10pt}
+\begin{flushleft}
+    To leverage my skills in full-stack development to design and deliver innovative, scalable, and efficient solutions that drive business success and enhance user experiences.
+\end{flushleft}
+
+%--------%
+% Skills %
+%--------%
+\sectionTitle{LaptopCode}{Technical Skills}
+\vspace{-10pt}
+\begin{flushleft}
+    \begin{tabular}{lp{25cm}}  % Further increased the width of the second column
+        \textbf{\faCode \ Languages}          & \hspace{10pt}xxxxx \\
+        \textbf{\faDesktop \ Front-end}        & \hspace{10pt}xxxxx \\
+        \textbf{\faServer \ Back-end}         & \hspace{10pt}xxxxx \\
+        \textbf{\faDatabase \ Databases}      & \hspace{10pt}xxxxx \\
+        \textbf{\faTools \ Tools}             & \hspace{10pt}xxxxx \\
+        \textbf{\faCogs \ Foundations}        & \hspace{10pt}xxxxx \\
+    \end{tabular}
+\end{flushleft}
+
+%------------%
+% Education %
+%------------%
+\sectionTitle{GraduationCap}{Education}
+\vspace{3pt}  % Decreased spacing slightly below the section title
+\begin{flushleft}
+    \begin{tabular}{lp{10cm}}
+        \textbf{xxxxx} \\
+        \small xxxxx \\
+        \small xxxxx \\
+        \\
+        \textbf{xxxxx} \\
+        \small xxxxx \\
+        \small xxxxx \\
+        \\
+        \textbf{xxxxx} \\
+        \small xxxxx \\
+        \small xxxxx \\
+    \end{tabular}
+\end{flushleft}
+
+%--------------------%
+% Key Achievements %
+%--------------------%
+\sectionTitle{Trophy}{Key Achievements}
+\vspace{5pt}  % Increased spacing below the section title
+\begin{resume_list}
+    \item \textbf{xxxxx} (xxxxx – xxxxx)
+    \item \textbf{xxxxx} (xxxxx – xxxxx)
+\end{resume_list}
+
+%--------------------%
+% Certifications %
+%--------------------%
+\sectionTitle{Certificate}{Certifications}
+\vspace{-10pt}
+\begin{multicols}{2}
+    \begin{resume_list}
+        \item xxxxx (xxxxx)
+        \item xxxxx (xxxxx)
+        \item xxxxx (xxxxx)
+    \end{resume_list}
+    \columnbreak
+    \begin{resume_list}
+        \item xxxxx (xxxxx)
+        \item xxxxx (xxxxx)
+    \end{resume_list}
+\end{multicols}
+
+%------------------------------%
+% Extracurricular Activities %
+%------------------------------%
+\sectionTitle{Users}{Extra-Curricular Activities}
+\vspace{-10pt}
+\begin{multicols}{2}
+    \begin{resume_list}
+        \item xxxxx
+        \item xxxxx
+    \end{resume_list}
+    \columnbreak
+    \begin{resume_list}
+        \item xxxxx
+    \end{resume_list}
+\end{multicols}
+
+% Comment
+% Developed by Sounak Chakraborty. So give a star to Sounak's GitHub profile.
+
+\end{document}
