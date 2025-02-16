@@ -1,0 +1,112 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\geometry{a4paper, margin=1in}
+
+% Colors
+\definecolor{darkblue}{RGB}{36, 59, 85}
+\definecolor{lightgray}{RGB}{224, 224, 224}
+
+% Font settings
+\usepackage{libertine}
+
+% Set section formats
+\titleformat{\section}
+{\color{darkblue}\large\bfseries}{}{0em}{}[\titlerule]
+
+\titleformat{\subsection}
+{\color{darkblue}\normalsize\bfseries}{}{0em}{}
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    citecolor=darkblue
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \bfseries Your Name} \\
+    \vspace{0.5em}
+    \faEnvelope \ \href{mailto:your.email@example.com}{your.email@example.com} \quad
+    \faPhone \ your phone number \quad
+    \faLinkedinSquare \ \href{https://www.linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile} \\
+    \faGithub \ \href{https://github.com/yourusername}{github.com/yourusername}
+\end{center}
+
+\section*{Summary}
+Motivated and results-driven software engineer with over 3 years of experience in developing high-quality web applications. Skilled in full-stack development and adept at working collaboratively with cross-functional teams. Passionate about learning new technologies and solving complex problems.
+
+\section*{Education}
+\begin{tabular}{p{0.7\textwidth} p{0.3\textwidth}}
+    \textbf{Your University} & City, Country \\
+    Bachelor of Science in Computer Science & Month Year - Month Year \\
+    \textit{GPA: 4.0/4.0} & \\
+\end{tabular}
+
+\section*{Experience}
+\begin{tabular}{p{0.7\textwidth} p{0.3\textwidth}}
+    \textbf{Your Company} & City, Country \\
+    Software Engineer & Month Year - Present \\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{itemize}[leftmargin=1.5em, label=\textbullet]
+            \item Developed and maintained web applications using HTML, CSS, JavaScript, and React.
+            \item Collaborated with cross-functional teams to deliver high-quality software products.
+            \item Implemented RESTful APIs and integrated third-party services.
+        \end{itemize}
+    } \\
+    \textbf{Another Company} & City, Country \\
+    Intern & Month Year - Month Year \\
+    \multicolumn{2}{p{\textwidth}}{
+        \begin{itemize}[leftmargin=1.5em, label=\textbullet]
+            \item Assisted in developing automation scripts using Python.
+            \item Conducted data analysis and visualization to support decision-making processes.
+            \item Participated in team meetings and contributed to project planning.
+        \end{itemize}
+    } \\
+\end{tabular}
+
+\section*{Projects}
+\begin{itemize}[leftmargin=1.5em, label=\textbullet]
+    \item \textbf{Project Name} - Brief description of the project and technologies used.
+    \item \textbf{Another Project} - Brief description of the project and technologies used.
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}[leftmargin=1.5em, label=\textbullet]
+    \item Programming Languages: Python, Java, C++
+    \item Web Development: HTML, CSS, JavaScript, React
+    \item Tools & Technologies: Git, Docker, Jenkins
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}[leftmargin=1.5em, label=\textbullet]
+    \item \textbf{Certification Name} - Issuing Organization, Month Year
+    \item \textbf{Another Certification} - Issuing Organization, Month Year
+\end{itemize}
+
+\section*{Languages}
+\begin{itemize}[leftmargin=1.5em, label=\textbullet]
+    \item English (Fluent)
+    \item Spanish (Intermediate)
+    \item French (Basic)
+\end{itemize}
+
+\section*{Interests}
+\begin{itemize}[leftmargin=1.5em, label=\textbullet]
+    \item \textbf{Hiking} - Exploring nature trails and mountain paths.
+    \item \textbf{Photography} - Capturing moments and landscapes.
+    \item \textbf{Reading} - Enjoying fiction and non-fiction books.
+\end{itemize}
+
+\end{document}
