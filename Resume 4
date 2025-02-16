@@ -1,0 +1,103 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+
+%----- Colors -----
+\definecolor{headerblue}{RGB}{0,102,204}
+\definecolor{sectiongray}{RGB}{102,102,102}
+\definecolor{linkcolor}{RGB}{0,102,204}
+
+%----- Header and Footer -----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small{\textbf{\textcolor{headerblue}{Your Name}}}}
+\fancyhead[R]{\small{\textbf{\textcolor{headerblue}{Contact Information}}}}
+\fancyfoot[L]{\small{\textbf{\textcolor{headerblue}{LinkedIn:}} \href{your-linkedin-profile}{your-linkedin-profile}}}
+\fancyfoot[R]{\small{\textbf{\textcolor{headerblue}{GitHub:}} \href{your-github-profile}{your-github-profile}}}
+
+%----- Document -----
+\begin{document}
+\begin{center}
+    {\Huge \textbf{\textcolor{headerblue}{Your Name}}} \
+
+\[0.5cm]
+    \small{\textcolor{sectiongray}{Your Address}} \hspace{5pt} | \hspace{5pt} \small{\textcolor{sectiongray}{your.email@example.com}} \hspace{5pt} | \hspace{5pt} \small{\textcolor{sectiongray}{Your Phone Number}}
+\end{center}
+
+\begin{multicols}{2}
+
+\section*{\textcolor{headerblue}{Education}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Your University Name}, Your Degree | Graduation Year \\
+    Relevant coursework: Course 1, Course 2, Course 3
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Experience}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Company Name}, Job Title | Dates of Employment \\
+    \begin{itemize}[label=--]
+        \item Accomplishment or responsibility 1
+        \item Accomplishment or responsibility 2
+    \end{itemize}
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Skills}}
+\begin{itemize}[label=\textbullet]
+    \item Skill 1
+    \item Skill 2
+    \item Skill 3
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Certifications}}
+\begin{itemize}[label=\textbullet]
+    \item Certification Name | Issuing Organization | Date of Issuance
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Languages}}
+\begin{itemize}[label=\textbullet]
+    \item Language 1 (Proficiency Level)
+    \item Language 2 (Proficiency Level)
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Awards and Honors}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Award Name} | Issuing Organization | Date \\
+    Brief description of the award and your achievement
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Professional Affiliations}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Affiliation Name} | Role | Date \\
+    Brief description of your involvement and contributions
+\end{itemize}
+
+\end{multicols}
+
+\section*{\textcolor{headerblue}{Projects}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Project Name} | Date \\
+    Project description and any notable achievements
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Publications}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Publication Title} | Journal/Conference Name | Date \\
+    Brief description of the publication and your role in it
+\end{itemize}
+
+\section*{\textcolor{headerblue}{Professional Summary}}
+A brief paragraph highlighting your professional background, key skills, and career goals.
+
+\section*{\textcolor{headerblue}{Volunteer Experience}}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Organization Name}, Volunteer Role | Dates \\
+    Brief description of your volunteer work and contributions
+\end{itemize}
+
+\end{document}
