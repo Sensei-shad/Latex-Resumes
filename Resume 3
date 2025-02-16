@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{fontawesome}
+
+% Set colors
+\definecolor{headercolor}{HTML}{FFCDD2}
+\definecolor{headingcolor}{HTML}{FFCDD2}
+\definecolor{bulletcolor}{HTML}{7F7F7F}
+
+% Set section format
+\titleformat{\section}{
+    \color{headingcolor}\large\bfseries
+}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge John Doe} \\
+    \vspace{0.2cm}
+    \href{tel:123-456-7890}{\faPhone \ 123-456-7890} \\
+    \href{mailto:john.doe@email.com}{\faEnvelope \ john.doe@email.com} \\
+    \href{https://linkedin.com/in/johndoe}{\faLinkedin \ linkedin.com/in/johndoe}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=white,colframe=headercolor,arc=4mm, boxrule=0.5mm]
+\section*{Professional Summary}
+Results-driven marketing professional with over 5 years of experience in digital marketing, social media management, and content creation. Proven track record of increasing brand awareness and driving customer engagement. Seeking to leverage my skills and experience to contribute to a dynamic team.
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=white,colframe=headercolor,arc=4mm, boxrule=0.5mm]
+\section*{Work Experience}
+\textbf{\color{headercolor}Digital Marketing Specialist} \\
+\textit{ABC Company, New York, NY} \\
+\textit{June 2020 - Present}
+\begin{itemize}
+    \item \color{bulletcolor}Developed and executed digital marketing campaigns that increased website traffic by 30\% in one year.
+    \item Managed social media accounts and increased followers by 25\%.
+    \item Created and curated engaging content for the company blog, resulting in a 20\% increase in readership.
+\end{itemize}
+
+\textbf{\color{headercolor}Marketing Coordinator} \\
+\textit{XYZ Agency, Boston, MA} \\
+\textit{January 2018 - May 2020}
+\begin{itemize}
+    \item \color{bulletcolor}Assisted in the planning and execution of marketing campaigns for various clients.
+    \item Conducted market research and competitor analysis to inform marketing strategies.
+    \item Designed promotional materials, including flyers, brochures, and social media graphics.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\begin{tcolorbox}[colback=white,colframe=headercolor,arc=4mm, boxrule=0.5mm]
+\section*{Education}
+\textbf{\color{headercolor}Bachelor of Science in Marketing} \\
+\textit{University of California, Los Angeles (UCLA)} \\
+\textit{Graduation Date: June 2017}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=white,colframe=headercolor,arc=4mm, boxrule=0.5mm]
+\section*{Skills}
+\begin{itemize}
+    \item \color{bulletcolor}Digital marketing
+    \item Social media management
+    \item Content creation
+    \item SEO and SEM
+    \item Google Analytics
+    \item Adobe Creative Suite
+    \item Excellent communication skills
+\end{itemitem}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[colback=white,colframe=headercolor,arc=4mm, boxrule=0.5mm]
+\section*{Certifications}
+\begin{itemize}
+    \item \color{bulletcolor}Google Ads Certification, Google, January 2022
+    \item HubSpot Content Marketing Certification, HubSpot, March 2021
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}
